@@ -1,0 +1,187 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***** End CSS Reset ***/
+html {
+	height: 100%;
+}
+
+body {
+	background: #77aa44;
+	height: 100%;
+}
+
+#wrap {
+	width: 650px;
+	max-width: 95%;
+	min-height: 100%;
+	background: #fff;
+	margin: auto;
+	-webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 1);
+	box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 1);
+}
+
+header {
+	max-width: 100%;
+	height: 80px;
+	padding-top: 20px;
+	border-bottom: solid 2px black;
+	clear: both;
+}
+
+.logo {
+	font-size: 50px;
+	font-weight: bold;
+	float: left;
+	padding: 0px 0px 0px 30px;
+	margin-right: 30px;
+}
+ 
+.topnav {
+	padding-top: 20px;
+}
+
+.topnav ul li{
+	font-size: 1em;
+	display: inline;
+	padding-left: 2px;
+}
+
+article, form {
+	margin: auto;
+	padding: 2% 0%;
+	width: 85.714285%;
+}
+
+article h2 {
+	font-size: 24px;
+	font-weight: bold;
+	padding-bottom: 5px
+}
+
+form ul li{
+	padding-top: 5px;
+}
+
+nav ul li a{
+	padding: 2px;
+}
+
+nav ul li a:hover{
+	background: #C0D904;
+	border-radius: 5px;
+}
+
+article cite {
+	display:block;
+	padding-bottom: 10px;
+	font-size: 14px;
+}
+
+article p {
+	font-size: 16px;
+}
+
+.error {
+	color: red;
+}
+
+/*
+ * Joke brief
+ -----------------------*/
+.jokester ul li{
+	padding-top: 10px;
+}
+.jokester ul li h4 {
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+
+/*
+ * Form elements
+ -----------------------*/
+fieldset        {padding:10px 30px;margin:0;border:1px solid #ccc;box-shadow:2px 5px 1px #ccc}
+legend          {color:#333;padding:0 10px;margin:0;font-size:1.5em;font-weight:400;}
+input           {width:35.714285%;}
+input,
+textarea        {border:1px solid #ccc;padding:5px;margin:10px 0 0 0;width: 100%;}
+input:focus,
+textarea:focus  {background:#ffc;}
+textarea        {font:.9em Verdana, Arial, Helvetica, sans-serif;}
+label           {display:block;margin:12px 0 0;font-weight:700;font-size:.9em;float:left;clear:left;width:90px;}
+label:after     {content:": ";}
+button          {display:block;float:right;clear:both;margin:1em 0 1em 0px;}
+
+/***** Media Queries ***/
+@media screen and (max-width: 725px){
+	.logo {
+		display: block;
+		float: none;
+	}
+	.topnav {
+		margin-left: 30px;
+		margin-top: -10px;
+		display: block;
+		float: none;
+	}
+	.topnav ul li {
+		padding: 1px;
+	}
+}
+
+@media screen and (max-width: 420px){
+	.topnav {
+		margin-left: 5px;
+	}
+	.topnav ul li {
+		font-size: 13px;
+		padding-left: 2px;
+	}
+}
